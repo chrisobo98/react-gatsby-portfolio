@@ -1,0 +1,151 @@
+#main {
+	background-color: _palette(bg-alt);
+
+	>* {
+		border-top: solid 1px _palette(border);
+
+		&:first-child {
+			border-top: 0;
+		}
+
+		@include inner;
+	}
+
+	&.alt {
+		background-color: transparent;
+		border-bottom: solid 1px _palette(border);
+	}
+}
+
+// My Services section on index.js
+#three {
+	background-color: white;
+
+	.inner-banner-text {
+		color: black;
+		text-align: center;
+	}
+
+	.lower-made-with {
+		-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+		filter: grayscale(100%); /* FF 35+ */
+	}
+
+	.lower-made-with:hover {
+		transition: filter .2s ease-in-out;
+		-webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+		filter: grayscale(0%); /* FF 35+ */
+		cursor: pointer;
+	}
+
+
+	@media screen and (max-width: 980px) {
+		.lower-made-with {
+			width: 50% !important;
+		}
+	}
+
+	.crimson {
+		background-color: #ff1a5b;
+		color: white;
+
+	}
+
+
+	.inner-banner-text-2 {
+		color: black;
+		text-align: center;
+		margin-top: -70px;
+		margin-bottom: 70px;
+	}
+
+	.inner-banner-header {
+		color: black;
+		text-align: center;
+		padding-bottom: 45px;
+		font-size: 34px;
+		font-weight: bold;
+	}
+
+	.inner-banner-images {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+	}
+	
+	.inner-banner-mockups {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.inner-banner-phone {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 51.4%;
+	}
+
+	.inner-banner-images:hover {
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+#four {
+	background-image: linear-gradient(#28A5CC, #098AB2);
+
+	.inner-banner-profile-pic {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+		margin-top: 10%;
+		border-radius: 10px; 
+		-webkit-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.65);
+		-moz-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.65);
+		box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.65);
+	}
+
+	.inner-banner-header {
+		color: white;
+		font-size: 34px;
+		font-weight: bold;
+	}
+}
+
+#subscribe {
+		@include padding(1em, 0, (1em, 0, 0, 0));
+		background-position: center;
+		background-color: white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: black !important;
+		text-align: center;
+
+
+
+	h1 {
+		color: black;
+		font-weight: bold;
+		font-size: 65px;
+		line-height: 100%;
+	}
+
+	.awesome-subs {
+		margin-top: -55px;
+	}
+
+	.crimson {
+		background-color: #ff1a5b;
+		color: white;
+	}
+
+	label {
+		color: black;
+	}
+
+}
